@@ -1,0 +1,78 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+nav{
+  background-color: darkblue;
+  padding: 10px;
+}
+nav a{
+  color: white;
+  display: block;
+  padding: 20px;
+}
+h1{
+  color: rgb(243, 243, 243);
+}
+main {
+  max-width: 840px; /* limit the width */
+  margin: 0 auto;   /* center the content */
+  padding: 1rem;
+}
+img{
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 30px 30px gray;
+}
+p{
+  padding: 10px;
+}
+
+aside {
+  width: 20rem;
+  margin: 1rem auto;
+  border: 1px solid rgb(0 0 0 / 0.2); /* light transparent border */
+  padding: 1rem;
+  background-color: #eee; /* light gray background */
+  color: #333;            /* dark gray text */
+  text-align: center;
+}
+
+/* image inside aside */
+aside img {
+  width: 200px;
+  height: auto; /* keep aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+p {
+  padding: 0; /* no padding */
+  margin: 0.5rem 0;
+}
+footer {
+  margin-top: 2rem;              /* space above the footer */
+  border-top: 1px solid #ccc;    /* gray line */
+  text-align: center;            /* center the text */
+  padding: 1rem 0;               /* inner spacing */
+  background-color: #f9f9f9;     /* optional: light background */
+  color: #333;
+}
