@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-  background-color: #a034de;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,12 +37,12 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--light-color);
   font-weight: 500;
 }
 
 nav a.active {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 /* Contact Info */
@@ -52,7 +52,7 @@ nav a.active {
 }
 
 .contact-info a {
-  color: hsl(291, 90%, 49%);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -96,15 +96,15 @@ textarea {
 }
 
 button {
-  background-color: #7b4fce;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
   border: none;
   cursor: pointer;
   margin-top: 15px;
 }
 
 button:hover {
-  background-color: #5e39a8;
+  background-color: #5e39a8; /* optionnel : tu peux créer --secondary-hover si tu veux */
 }
 
 .checkbox {
