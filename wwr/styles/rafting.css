@@ -1,13 +1,13 @@
-/* Variables de couleurs */
+/*  Variables de couleurs */
 :root {
   --primary-color: #0a3d62;
   --secondary-color: #3c6382;
-  --accent-color: #e67e22; 
+  --accent-color: #e67e22;
   --light-color: #ffffff;
   --dark-color: #2c3e50;
 }
 
-/* Style général */
+/* 🧾 Style général */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -31,12 +31,12 @@ header {
 
 nav ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a.active {
   border-bottom: 2px solid var(--accent-color);
 }
 
-/* Hero Banner */
+/*  Hero Banner */
 .hero {
   position: relative;
   text-align: center;
@@ -74,7 +74,57 @@ nav a.active {
   font-size: 2rem;
 }
 
-/* Contact Info */
+/*  Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+  margin-top: 10px;
+}
+
+/* Bouton d’appel à l’action */
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d35400;
+}
+
+/*  Grid Content (Home) */
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-item img {
+  border-radius: 10px;
+}
+
+/*  Contact Info */
 .contact-info {
   text-align: center;
   margin: 30px auto;
@@ -86,23 +136,7 @@ nav a.active {
   text-decoration: none;
 }
 
-/* Form Section */
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin: 40px auto;
-  width: 80%;
-  align-items: start;
-}
-
-.map iframe {
-  width: 100%;
-  border: 0;
-  border-radius: 10px;
-  height: 300px;
-}
-
+/* 📝 Formulaire */
 form {
   display: flex;
   flex-direction: column;
@@ -136,11 +170,7 @@ button {
 }
 
 button:hover {
-  background-color: #e67e22;
-}
-
-.checkbox {
-  margin-top: 10px;
+  background-color: #d35400;
 }
 
 .radio-title {
@@ -148,7 +178,15 @@ button:hover {
   font-weight: 600;
 }
 
-/* Employee Section */
+/*  Carte */
+.map iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/*  Section Employés */
 .employees {
   text-align: center;
   padding: 40px;
@@ -170,7 +208,45 @@ button:hover {
   object-fit: cover;
 }
 
-/* Footer */
+/*  Tableau (Trips) */
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/*  Trip Grid */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 🦶 Footer */
 footer {
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -187,6 +263,7 @@ footer .social {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  padding-right: 2rem;
 }
 
 footer .social a img {
@@ -197,21 +274,13 @@ footer .social a img {
 
 footer .social a img:hover {
   transform: scale(1.2);
-
-}
-footer .social {
-  justify-content: flex-end; 
-}
-footer .social {
-  justify-content: flex-end;
-  padding-right: 2rem;
 }
 
-
-
-/* Responsive Design */
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
-  .contact-form {
+  .contact-form,
+  .grid-content,
+  .trip-grid {
     grid-template-columns: 1fr;
   }
 
@@ -230,3 +299,5 @@ footer .social {
     padding: 10px 20px;
   }
 }
+
+
