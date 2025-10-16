@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Get in touch with White Water Rafting Company in Brazzaville, Congo. Ask questions, book your next adventure, or get help from our team.">
   <meta name="author" content="Ornela Mbanga - Web Development Student">
-  <title>Contact Us |  White Water Rafting Co.</title>
+  <title>Contact Us | White Water Rafting Co.</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -21,51 +21,51 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="contact-info">
-      <h1> White Water Rafting Co.</h1>
+      <h1>White Water Rafting Co.</h1>
       <p><strong>Address:</strong> 29 rue Jacob Binaki, Brazzaville, Congo</p>
       <p><strong>Phone:</strong> +242 065 328 612</p>
       <p><strong>Email:</strong> <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
     </section>
+    <section class="contact-section">
+   <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.361276304862!2d15.284185474964825!3d-4.263360946806412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6b0b3df4b3d6a9%3A0x6e734cbe4c8b5a2!2sBrazzaville%2C%20Congo!5e0!3m2!1sen!2scg!4v1694567890123!5m2!1sen!2scg"
+      allowfullscreen
+      loading="lazy"
+      title="Map of Brazzaville, Congo">
+    </iframe>
+   </div>
 
+   <div class="form-container">
     <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
 
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Your email" required>
+      <p class="radio-title">Message Purpose</p>
+      <input type="radio" id="purpose-general" name="purpose" value="general" checked>
+      <label for="purpose-general">General Inquiry</label>
 
-  <p class="radio-title">Message Purpose</p>
+      <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+      <label for="purpose-reservation">Reservation Question</label>
 
-  <input type="radio" id="purpose-general" name="purpose" value="general" checked>
-  <label for="purpose-general">General Inquiry</label>
+      <input type="radio" id="purpose-website" name="purpose" value="website">
+      <label for="purpose-website">Website Suggestion</label>
 
-  <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-  <label for="purpose-reservation">Reservation Question</label>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
 
-  <input type="radio" id="purpose-website" name="purpose" value="website">
-  <label for="purpose-website">Website Suggestion</label>
-
-  <label for="message">Message</label>
-  <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-
-  <input type="checkbox" id="newsletter" name="newsletter" checked>
-  <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-
-  <button type="submit">Get in Touch!</button>
-</form>
-
- <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.361276304862!2d15.284185474964825!3d-4.263360946806412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6b0b3df4b3d6a9%3A0x6e734cbe4c8b5a2!2sBrazzaville%2C%20Congo!5e0!3m2!1sen!2scg!4v1694567890123!5m2!1sen!2scg"
-          allowfullscreen
-          loading="lazy"
-          title="Map of Brazzaville, Congo">
-        </iframe>
-      </div>
+      <input type="checkbox" id="newsletter" name="newsletter" checked>
+      <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+      
+      <button type="submit">Get in Touch!</button>
+    </form>
+     </div>
+   </section>
 
     <section class="employees">
       <h2>We Are Here to Serve You</h2>
@@ -97,3 +97,4 @@
 
 </body>
 </html>
+
